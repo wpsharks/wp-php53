@@ -24,7 +24,7 @@ else wp_php53_notice(); // Creates a PHP v5.3+ Dashboard notice for the site own
 
 ### Understanding `if(require('wp-php53.php'))`
 
-The `wp-php53.php` file will automatically return `TRUE` upon being included in your scripts, IF (and only if) the installation site is running PHP v5.3+. Otherwise it returns `FALSE`. Therefore, the simplest way to run your check, is to use `if(require('wp-php53.php'))`. **However**, you could also choose to do it this way (the choice is yours).
+The `wp-php53.php` file will automatically return `TRUE` upon being included in your scripts, IF (and only if) the installation site is running PHP v5.3+. Otherwise it returns `FALSE`. Therefore, the simplest way to run your check, is to use `if(require('wp-php53.php'))`. **However**, you could also choose to do it this way.
 
 ```
 <?php
