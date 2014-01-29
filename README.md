@@ -67,7 +67,7 @@ This is fine. The `wp-php53.php` file uses `function_exists()` as a wrapper; whi
 
 ### Can this Just Go at the Top of My Existing Theme/Plugin File?
 
-**Yes, but there are two important things to remember.**
+**No, there are two important things to remember.**
 
 1. Don't forget to bundle a copy of `wp-php53.php` with your theme/plugin.
 2. Don't leave your existing code in the same file. Use this in a stub file that checks for PHP v5.3+ first, BEFORE loading your code which depends on PHP v5.3+. Why? If you put a PHP v5.3+ check at the top of an existing PHP file, and that PHP file contains code which is only valid in PHP v5.3+, it may still trigger a syntax error. For this reason, you should move your code into a separate file and create a stub file that checks for the existence of PHP v5.3+ first.
