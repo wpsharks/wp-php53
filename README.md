@@ -1,4 +1,4 @@
-## WP PHP 5.3+
+## WP PHP 5.3+ Stub File
 
 Stub for WordPress themes/plugins that require PHP v5.3+.
 
