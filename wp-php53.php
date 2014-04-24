@@ -31,7 +31,7 @@ if(!function_exists('wp_php53_notice'))
 						$notice = sprintf(__('<strong>%1$s is NOT active; %1$s requires PHP v5.3 (or higher).</strong>', $software_text_domain), $software_name);
 						$notice .= ' '.sprintf(__('You\'re currently running <code>PHP v%1$s</code>.', $software_text_domain), PHP_VERSION);
 						$notice .= ' '.__('A simple update is necessary. Please ask your web hosting company to do this for you.', $software_text_domain);
-						$notice .= ' '.sprintf(__('To remove this message, please deactivate the %1$s plugin.', $software_text_domain), $software_name);
+						$notice .= ' '.sprintf(__('To remove this message, please deactivate %1$s.', $software_text_domain), $software_name);
 					}
 				$notice_handler = create_function('', 'if(current_user_can(\''.str_replace("'", "\\'", $notice_cap).'\'))'.
 				                                      '  echo \'<div class="error"><p>'.str_replace("'", "\\'", $notice).'</p></div>\';');
