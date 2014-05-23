@@ -4,7 +4,7 @@ Stub for WordPress themes/plugins that require PHP v5.3+.
 
 ### Example Usage in a Typical WordPress Theme/Plugin File
 
-```
+```php
 <?php
 /*
 	Plugin Name: My Plugin
@@ -26,7 +26,7 @@ else wp_php53_notice(); // Creates a PHP v5.3+ Dashboard notice for the site own
 
 The `wp-php53.php` file will automatically return `TRUE` upon being included in your scripts, IF (and only if) the installation site is running PHP v5.3+. Otherwise it returns `FALSE`. Therefore, the simplest way to run your check, is to use `if(require('wp-php53.php'))`. **However**, you could also choose to do it this way.
 
-```
+```php
 <?php
 require dirname(__FILE__).'/wp-php53.php';
 
@@ -39,7 +39,7 @@ else wp_php53_notice();
 
 ### Dashboard Notice that Calls your Software by Name
 
-```
+```php
 <?php
 if(require(dirname(__FILE__).'/wp-php53.php')) // TRUE if running PHP v5.3+.
 	require dirname(__FILE__).'/my-plugin-code.php'; // OK to load your plugin.
@@ -50,7 +50,7 @@ else wp_php53_notice('My Plugin'); // Dashboard notice mentions your software sp
 
 ### Using a Custom Dashboard Notice
 
-```
+```php
 <?php
 if(require(dirname(__FILE__).'/wp-php53.php')) // TRUE if running PHP v5.3+.
 	require dirname(__FILE__).'/my-plugin-code.php'; // OK to load your plugin.
