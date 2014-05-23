@@ -1,4 +1,4 @@
-## WP PHP 5.3+ (Dashboard Notice)
+## WP PHP 5.3+ (Check w/ Dashboard Notice)
 
 Stub for WordPress themes/plugins that require PHP v5.3+.
 
