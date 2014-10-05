@@ -75,3 +75,8 @@ This is fine. The `wp-php53.php` file uses `function_exists()` as a wrapper; whi
 ---
 
 This project is now on Floobits too! [Watch us code](https://floobits.com/jaswsinc/wp-php53/redirect) in real-time :-) <a href="https://floobits.com/jaswsinc/wp-php53/redirect"><img alt="Floobits status" width="100" height="40" src="https://floobits.com/jaswsinc/wp-php53.png" align="right" /></a>
+
+---
+
+Copyright: © 2014 [WebSharks, Inc.](http://www.websharks-inc.com/bizdev/) (coded in the USA)
+Released under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl-2.0.html).
